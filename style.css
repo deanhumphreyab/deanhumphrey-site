@@ -267,10 +267,16 @@ h1 {
 }
 
 .what-i-do,
-.article-section {
+.article-section,
+.featured-projects {
   background: var(--off-white);
   color: var(--slate-950);
   padding: 32px 24px 58px;
+}
+
+.featured-projects {
+  padding-top: 54px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
 }
 
 .article-section {
@@ -297,7 +303,8 @@ h1 {
   font-size: 1.08rem;
 }
 
-.cards {
+.cards,
+.project-grid {
   width: min(1120px, 100%);
   margin: 0 auto;
   display: grid;
@@ -305,7 +312,8 @@ h1 {
   gap: 28px;
 }
 
-.card {
+.card,
+.project-card {
   min-height: 245px;
   padding: 34px 26px;
   text-align: center;
@@ -313,6 +321,10 @@ h1 {
   border: 1px solid rgba(15, 23, 42, 0.12);
   border-radius: 12px;
   box-shadow: 0 18px 42px rgba(15, 23, 42, 0.05);
+}
+
+.project-card {
+  text-align: left;
 }
 
 .circle-icon {
@@ -329,18 +341,32 @@ h1 {
   box-shadow: 0 14px 28px rgba(2, 8, 22, 0.18);
 }
 
-.card h3 {
+.card h3,
+.project-card h3 {
   margin: 0 0 12px;
   color: var(--slate-950);
   font-size: 1.28rem;
   line-height: 1.2;
 }
 
-.card p {
+.card p,
+.project-card p {
   margin: 0 auto;
   max-width: 260px;
   color: var(--slate-700);
   font-size: 1rem;
+}
+
+.project-card p {
+  margin: 0 0 18px;
+  max-width: none;
+}
+
+.project-card a {
+  color: var(--navy-800);
+  font-weight: 800;
+  text-decoration-color: var(--blue);
+  text-underline-offset: 4px;
 }
 
 .article-card,
@@ -448,7 +474,8 @@ footer p {
   }
 
   .profile-links,
-  .cards {
+  .cards,
+  .project-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -506,7 +533,8 @@ footer p {
   }
 
   .profile-links,
-  .cards {
+  .cards,
+  .project-grid {
     grid-template-columns: 1fr;
   }
 
@@ -515,7 +543,8 @@ footer p {
   }
 
   .article-card,
-  .lab-card {
+  .lab-card,
+  .project-card {
     padding: 28px 22px;
   }
 
