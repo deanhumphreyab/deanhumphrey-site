@@ -9,7 +9,7 @@
   <meta property="og:title" content="Dean Humphrey | IT Support & Networking">
   <meta property="og:description" content="IT support and networking profile focused on troubleshooting, TCP/IP, DNS, and CompTIA certification pathways.">
   <meta property="og:type" content="website">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
   <header class="site-header">
@@ -18,7 +18,7 @@
       <span class="brand-name">Dean Humphrey</span>
     </a>
     <nav class="site-nav" aria-label="Main navigation">
-      <a href="#top">Home</a>
+      <a class="active" href="#top">Home</a>
       <a href="#about">About</a>
       <a href="#links">Links</a>
     </nav>
@@ -26,70 +26,64 @@
 
   <main id="top">
     <section class="hero">
-      <div class="network network-left" aria-hidden="true"></div>
-      <div class="network network-right" aria-hidden="true"></div>
+      <div class="node-field node-left" aria-hidden="true"></div>
+      <div class="node-field node-right" aria-hidden="true"></div>
 
       <div class="hero-content">
         <div class="logo-large" aria-hidden="true">DH</div>
         <h1>Dean Humphrey</h1>
-        <div class="accent-line"></div>
+        <span class="blue-rule" aria-hidden="true"></span>
         <p class="hero-title">IT Support | Networking | Systems</p>
         <p class="hero-text">
-          Building practical skills in technical troubleshooting, networking fundamentals,
-          and reliable system support for entry-level IT environments.
+          Building practical skills in reliable IT support, secure networking fundamentals,
+          and efficient systems troubleshooting.
         </p>
 
-        <div id="links" class="link-grid" aria-label="Profile links">
+        <div id="links" class="profile-links" aria-label="Profile links">
           <a href="https://www.linkedin.com/in/deanhumphreyab/" target="_blank" rel="noopener noreferrer">
-            <span class="link-icon">in</span>
+            <span class="platform-icon">in</span>
             <span>LinkedIn</span>
           </a>
           <a href="https://github.com/deanhumphreyab" target="_blank" rel="noopener noreferrer">
-            <span class="link-icon">GH</span>
+            <span class="platform-icon">GH</span>
             <span>GitHub</span>
           </a>
           <a href="https://medium.com/@deanhumphreyab" target="_blank" rel="noopener noreferrer">
-            <span class="link-icon">M</span>
+            <span class="platform-icon">M</span>
             <span>Medium</span>
           </a>
           <a href="https://about.me/deanhumphreyab" target="_blank" rel="noopener noreferrer">
-            <span class="link-icon">@</span>
+            <span class="platform-icon">@</span>
             <span>About.me</span>
           </a>
         </div>
       </div>
     </section>
 
-    <section id="about" class="content-section">
-      <div class="section-heading">
+    <section id="about" class="what-i-do">
+      <div class="section-title">
         <h2>What I Do</h2>
-        <div class="accent-line small"></div>
-        <p>Focused on building practical, reliable, and support-ready IT skills.</p>
+        <span class="blue-rule small" aria-hidden="true"></span>
+        <p>Focused on building, securing, and supporting technology fundamentals.</p>
       </div>
 
-      <div class="card-grid">
-        <article class="info-card">
-          <div class="card-icon">⌘</div>
-          <div>
-            <h3>IT Support</h3>
-            <p>Developing structured troubleshooting skills for hardware, software, and operating system issues.</p>
-          </div>
+      <div class="cards">
+        <article class="card">
+          <div class="circle-icon">▦</div>
+          <h3>Network Fundamentals</h3>
+          <p>Building understanding of TCP/IP, DNS, network communication, and troubleshooting workflows.</p>
         </article>
 
-        <article class="info-card">
-          <div class="card-icon">◇</div>
-          <div>
-            <h3>Networking Fundamentals</h3>
-            <p>Studying TCP/IP, DNS, network communication, and practical diagnostic concepts.</p>
-          </div>
+        <article class="card">
+          <div class="circle-icon">◇</div>
+          <h3>Systems & Support</h3>
+          <p>Developing practical skills in operating systems, diagnostics, support processes, and issue resolution.</p>
         </article>
 
-        <article class="info-card">
-          <div class="card-icon">▣</div>
-          <div>
-            <h3>CompTIA Path</h3>
-            <p>Working through CompTIA A+ and Network+ concepts while building hands-on technical understanding.</p>
-          </div>
+        <article class="card">
+          <div class="circle-icon">▤</div>
+          <h3>IT Operations</h3>
+          <p>Learning reliable support habits for maintaining efficient, stable, and user-focused IT environments.</p>
         </article>
       </div>
     </section>
