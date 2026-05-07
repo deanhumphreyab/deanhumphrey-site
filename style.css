@@ -87,7 +87,8 @@ img {
   border-bottom-color: var(--blue);
 }
 
-.hero {
+.hero,
+.page-hero {
   position: relative;
   overflow: hidden;
   min-height: 735px;
@@ -100,15 +101,22 @@ img {
     linear-gradient(135deg, #020816 0%, #041126 50%, #082244 100%);
 }
 
+.page-hero {
+  min-height: 500px;
+}
+
 .hero::before,
-.hero::after {
+.hero::after,
+.page-hero::before,
+.page-hero::after {
   content: "";
   position: absolute;
   inset: 0;
   pointer-events: none;
 }
 
-.hero::before {
+.hero::before,
+.page-hero::before {
   background-image:
     linear-gradient(30deg, transparent 0 48%, rgba(79, 156, 255, 0.18) 49% 50%, transparent 51% 100%),
     linear-gradient(145deg, transparent 0 48%, rgba(79, 156, 255, 0.13) 49% 50%, transparent 51% 100%);
@@ -117,7 +125,8 @@ img {
   mask-image: radial-gradient(circle at center, transparent 0 22%, black 48%, black 100%);
 }
 
-.hero::after {
+.hero::after,
+.page-hero::after {
   background-image: radial-gradient(circle, rgba(93, 165, 255, 0.95) 0 3px, transparent 4px);
   background-size: 150px 150px;
   opacity: 0.32;
@@ -151,7 +160,8 @@ img {
   transform: scaleX(-1) rotate(-4deg);
 }
 
-.hero-content {
+.hero-content,
+.page-content {
   position: relative;
   z-index: 2;
   width: min(960px, 100%);
@@ -167,6 +177,11 @@ img {
   box-shadow:
     0 0 0 7px rgba(255, 255, 255, 0.05),
     0 24px 55px rgba(0, 0, 0, 0.42);
+}
+
+.page-logo {
+  width: 160px;
+  height: 160px;
 }
 
 h1 {
@@ -251,10 +266,15 @@ h1 {
   letter-spacing: -0.04em;
 }
 
-.what-i-do {
+.what-i-do,
+.article-section {
   background: var(--off-white);
   color: var(--slate-950);
   padding: 32px 24px 58px;
+}
+
+.article-section {
+  padding-top: 46px;
 }
 
 .section-title {
@@ -323,6 +343,32 @@ h1 {
   font-size: 1rem;
 }
 
+.article-card {
+  width: min(900px, 100%);
+  margin: 0 auto;
+  padding: 44px;
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  border-radius: 14px;
+  box-shadow: 0 18px 42px rgba(15, 23, 42, 0.05);
+}
+
+.article-card p {
+  margin: 0 0 22px;
+  color: var(--slate-700);
+  font-size: 1.08rem;
+}
+
+.article-card p:first-child {
+  color: var(--slate-950);
+  font-size: 1.18rem;
+  font-weight: 700;
+}
+
+.article-card p:last-child {
+  margin-bottom: 0;
+}
+
 footer {
   padding: 30px 24px;
   text-align: center;
@@ -372,7 +418,8 @@ footer p {
     font-size: 0.95rem;
   }
 
-  .hero {
+  .hero,
+  .page-hero {
     min-height: auto;
     padding: 48px 18px 58px;
   }
@@ -384,6 +431,11 @@ footer p {
   .logo-large {
     width: 152px;
     height: 152px;
+  }
+
+  .page-logo {
+    width: 126px;
+    height: 126px;
   }
 
   h1 {
@@ -401,5 +453,9 @@ footer p {
 
   .profile-links a {
     min-height: 64px;
+  }
+
+  .article-card {
+    padding: 28px 22px;
   }
 }
