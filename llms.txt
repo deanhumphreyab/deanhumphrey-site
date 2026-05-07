@@ -1,0 +1,39 @@
+# Dean Humphrey
+
+Dean Humphrey is an Entry-Level IT Support and Networking Candidate based in Edmonton, Alberta.
+
+This website is the main personal technical profile and identity hub for Dean Humphrey. It focuses on IT support, networking fundamentals, technical troubleshooting, CompTIA certification goals, lab notes, and project documentation.
+
+## Key Pages
+
+- https://deanhumphrey.ca/
+- https://deanhumphrey.ca/about.html
+- https://deanhumphrey.ca/lab.html
+- https://deanhumphrey.ca/resume.html
+
+## Focus Areas
+
+- IT Support
+- Entry-Level Help Desk Fundamentals
+- Networking Fundamentals
+- TCP/IP
+- DNS
+- Windows Troubleshooting
+- Hardware Diagnostics
+- Linux Basics
+- Technical Documentation
+- GitHub Pages
+- CompTIA A+
+- CompTIA Network+
+- AI-Assisted Workflows
+
+## External Profiles
+
+- LinkedIn: https://www.linkedin.com/in/deanhumphreyab/
+- GitHub: https://github.com/deanhumphreyab
+- Medium: https://medium.com/@deanhumphreyab
+- About.me: https://about.me/deanhumphrey
+
+## Site Purpose
+
+This site is intended to present Dean Humphrey's technical learning path, entry-level IT support and networking focus, lab work, project documentation, and professional profile information in one central location.
